@@ -7,11 +7,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+// import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:gita/Data/model/api/mini_apps_response.dart';
 import 'package:gita/Presentation/Screens/Microapps/DpMaker/dp_maker_list_screen.dart';
 import 'package:gita/Presentation/Screens/Microapps/Panchang/panchang_main_screen.dart';
-import 'package:gita/Presentation/Widgets/Dialogue/dialogue.dart';
 import 'package:in_app_update/in_app_update.dart';
 import 'package:logger/logger.dart';
 import 'package:overlay_support/overlay_support.dart';
@@ -78,13 +77,13 @@ class _HomeScreenState extends State<HomeScreen>
 // ScreenShotController
 
   requestPermission() async {
-    FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-        FlutterLocalNotificationsPlugin();
+    // FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+    //     FlutterLocalNotificationsPlugin();
 
-    flutterLocalNotificationsPlugin
-        .resolvePlatformSpecificImplementation<
-            AndroidFlutterLocalNotificationsPlugin>()!
-        .requestPermission;
+    // flutterLocalNotificationsPlugin
+    //     .resolvePlatformSpecificImplementation<
+    //         AndroidFlutterLocalNotificationsPlugin>()!
+    //     .requestPermission;
   }
 
   void requestFirebasePermission() async {
